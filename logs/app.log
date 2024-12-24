@@ -530,3 +530,125 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2024-12-23 08:04:31 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2d7h23m25s112ms715µs300ns).
 2024-12-23 09:32:24 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1h25m22s746ms784µs200ns).
 2024-12-24 10:48:32 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=1d1h16m16s381ms262µs399ns).
+2024-12-24 11:16:38 [restartedMain] INFO  com.BOA_UserManagement.BoaUserManagementApplication - Starting BoaUserManagementApplication using Java 17.0.12 with PID 47260 (C:\Users\anura\OneDrive\Desktop\Anu\projects\BOA_UserManagement\build\classes\java\main started by anura in C:\Users\anura\OneDrive\Desktop\Anu\projects\BOA_UserManagement)
+2024-12-24 11:16:38 [restartedMain] INFO  com.BOA_UserManagement.BoaUserManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 11:16:38 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-24 11:16:38 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-24 11:16:39 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 11:16:39 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interface.
+2024-12-24 11:16:40 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2024-12-24 11:16:40 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-12-24 11:16:40 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 11:16:40 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 11:16:40 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 11:16:40 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1930 ms
+2024-12-24 11:16:40 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 11:16:40 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-24 11:16:41 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 11:16:41 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 11:16:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 11:16:41 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44c9251
+2024-12-24 11:16:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 11:16:41 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-24 11:16:41 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-24 11:16:41 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-24 11:16:42 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 11:16:42 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 11:16:43 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 11:16:43 [restartedMain] WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-12-24 11:16:43 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-12-24 11:16:43 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2024-12-24 11:16:43 [restartedMain] INFO  com.BOA_UserManagement.BoaUserManagementApplication - Started BoaUserManagementApplication in 5.799 seconds (process running for 6.867)
+2024-12-24 11:20:20 [http-nio-8083-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 11:20:20 [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 11:20:20 [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-24 11:20:20 [http-nio-8083-exec-2] INFO  com.BOA_UserManagement.Services.UserServiceImpl - Creating new user: johnny
+2024-12-24 11:20:20 [http-nio-8083-exec-2] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.BOA_UserManagement.Model.User */insert 
+    into
+        user (email, first_name, last_name, username) 
+    values
+        (?, ?, ?, ?)
+2024-12-24 11:20:25 [http-nio-8083-exec-3] INFO  com.BOA_UserManagement.Services.UserServiceImpl - Fetching all users
+2024-12-24 11:20:26 [http-nio-8083-exec-3] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.username 
+    from
+        user u1_0
+2024-12-24 11:20:54 [http-nio-8083-exec-4] INFO  com.BOA_UserManagement.Services.UserServiceImpl - Fetching all users
+2024-12-24 11:20:54 [http-nio-8083-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.username 
+    from
+        user u1_0
+2024-12-24 11:30:40 [restartedMain] INFO  com.BOA_UserManagement.BoaUserManagementApplication - Starting BoaUserManagementApplication using Java 17.0.12 with PID 42624 (C:\Users\anura\OneDrive\Desktop\Anu\projects\BOA_UserManagement\build\classes\java\main started by anura in C:\Users\anura\OneDrive\Desktop\Anu\projects\BOA_UserManagement)
+2024-12-24 11:30:40 [restartedMain] INFO  com.BOA_UserManagement.BoaUserManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 11:30:40 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-24 11:30:40 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-24 11:30:41 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 11:30:41 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2024-12-24 11:30:42 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8083 (http)
+2024-12-24 11:30:42 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2024-12-24 11:30:42 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 11:30:42 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 11:30:42 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 11:30:42 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1962 ms
+2024-12-24 11:30:42 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 11:30:42 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-24 11:30:42 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 11:30:42 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 11:30:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 11:30:43 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1dff80fd
+2024-12-24 11:30:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 11:30:43 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-24 11:30:43 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-24 11:30:43 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-24 11:30:43 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 11:30:44 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 11:30:44 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 11:30:44 [restartedMain] WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-12-24 11:30:44 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2024-12-24 11:30:45 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8083 (http) with context path '/'
+2024-12-24 11:30:45 [restartedMain] INFO  com.BOA_UserManagement.BoaUserManagementApplication - Started BoaUserManagementApplication in 5.37 seconds (process running for 6.234)
+2024-12-24 11:32:47 [http-nio-8083-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-24 11:32:47 [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-24 11:32:47 [http-nio-8083-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-24 11:32:47 [http-nio-8083-exec-2] INFO  com.BOA_UserManagement.Services.UserServiceImpl - Creating new user: johnny
+2024-12-24 11:32:47 [http-nio-8083-exec-2] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.BOA_UserManagement.Model.User */insert 
+    into
+        user (email, first_name, last_name, username) 
+    values
+        (?, ?, ?, ?)
+2024-12-24 11:32:57 [http-nio-8083-exec-3] INFO  com.BOA_UserManagement.Services.UserServiceImpl - Creating new user: johnny
+2024-12-24 11:32:57 [http-nio-8083-exec-3] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.BOA_UserManagement.Model.User */insert 
+    into
+        user (email, first_name, last_name, username) 
+    values
+        (?, ?, ?, ?)
