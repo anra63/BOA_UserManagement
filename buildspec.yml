@@ -4,11 +4,13 @@ phases:
   install:
     commands:
       - echo Installing Gradle
-      - curl -sSL https://get.gradle.org | bash -s -- --version 7.3  # Optional: Install a specific Gradle version if needed
+      - curl -sSL https://get.gradle.org | bash -s -- --version 7.3  # Optional: Install specific Gradle version
       - export PATH=$PATH:/root/.gradle/bin  # Add Gradle to PATH
 
   pre_build:
     commands:
+      - echo Ensuring execute permissions on gradlew
+      - chmod +x ./gradlew  # Ensure the gradlew script is executable
       - echo Logging in to Amazon ECR...
       - aws --version
       - REPOSITORY_URI=008971650574.dkr.ecr.us-east-2.amazonaws.com/tekarch/boarepo
@@ -16,7 +18,7 @@ phases:
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
       - echo Running Gradle build...
-      - ./gradlew clean build  # Replace Maven with Gradle command
+      - ./gradlew clean build  # Run Gradle build
 
   build:
     commands:
@@ -34,7 +36,6 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"course-service","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - echo Writing image definitions file...
-      # Optional: Specify your container name
       - DOCKER_CONTAINER_NAME=tekarch/boarepo
       - printf '[{"name":"%s","imageUri":"%s"}]' $DOCKER_CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - echo $DOCKER_CONTAINER_NAME
@@ -44,4 +45,4 @@ phases:
 artifacts:
   files:
     - imagedefinitions.json
-    - build/libs/course-service.jar  # Adjust path if needed based on your Gradle output
+    - build/libs/course-service.jar  # Adjust path based on your Gradle output
